@@ -26,7 +26,8 @@ function isName(inputString) {
     let counter = 0;
 
     for (letter of inputString) {
-        if (letter == letter.toLowerCase()) {
+        if (getType(letter) != "int" &&
+            letter == letter.toLowerCase()) {
             counter++;
         } else {
             counter = 0;
