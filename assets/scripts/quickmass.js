@@ -123,7 +123,7 @@ $("#main-input").on("keyup paste", function() {
         $("#empty").show();
     } else {
         if (isName(input)) {
-            let url = "https://en.wikipedia.org/wiki/" + input.replace(" ", "_")
+            let url = "https://www.google.com/search?q=" + input.replace(" ", "+")
             $("#wiki").attr("src", url);
             $("#wiki").height($("card").height() - 220);
             $("#wiki").show();
