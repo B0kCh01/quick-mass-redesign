@@ -123,7 +123,7 @@ $("#main-input").on("keyup paste", function() {
         $("#empty").show();
     } else {
         if (isName(input)) {
-            let url = "https://www.google.com/search?q=" + input.replace(" ", "+")
+            let url = "https://pubchem.ncbi.nlm.nih.gov/#query=" + input.replace(" ", "%20")
             $("#wiki").attr("src", url);
             $("#wiki").height($("card").height() - 220);
             $("#wiki").show();
