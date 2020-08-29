@@ -1,5 +1,5 @@
 {
-    "elements": {
+    "default": {
         "1": {
             "atomicMass": 1.0079,
             "atomicNumber": 1,
