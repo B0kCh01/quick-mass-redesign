@@ -37,8 +37,8 @@ img {
 }
 
 card img {
-    margin: 20px;
     width: 70%;
+    margin: 20px;
 }
 
 hr {
@@ -102,7 +102,8 @@ input {
     color: var(--primary);
     outline: none;
     padding-left: 10px;
-    transition: max-width .4s cubic-bezier(.26, 0, .33, 1), box-shadow .7s cubic-bezier(.26, 0, .33, 1), transform .7s cubic-bezier(.26, 0, .33, 1);
+    -webkit-appearance: none;
+    transition: max-width .45s cubic-bezier(.26, 0, .33, 1), box-shadow .7s cubic-bezier(.26, 0, .33, 1), transform .7s cubic-bezier(.26, 0, .33, 1);
 }
 
 input:focus {
@@ -228,10 +229,6 @@ iframe {
     height: 100%;
     margin: 20px 0;
     border: none;
-}
-
-.svg {
-    width: 50%;
 }
 
 #credits {
