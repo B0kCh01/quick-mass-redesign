@@ -56,6 +56,37 @@ $("#main-input").on("keyup paste", function() {
     }
 });
 
+var dark = false;
+
+function darkModeOn() {
+    document.documentElement.style.setProperty('--background-color', "#171717");
+    document.documentElement.style.setProperty('--primary', "#fff");
+    document.documentElement.style.setProperty('--heading-color', "#f7f7f7");
+    document.documentElement.style.setProperty('--color-green', "#a550c7");
+    document.documentElement.style.setProperty('--card-shadow', "#a550c72d");
+}
+
+function darkModeOff() {
+    document.documentElement.style.setProperty('--background-color', "#f0f0f0");
+    document.documentElement.style.setProperty('--primary', "#1c1c1c");
+    document.documentElement.style.setProperty('--heading-color', "#1c1e21");
+    document.documentElement.style.setProperty('--color-green', "#64B77D");
+    document.documentElement.style.setProperty('--card-shadow', "#0000002d");
+}
+
+function toggleDarkMode() {
+    if (dark) {
+        darkModeOff();
+    } else {
+        darkModeOn();
+    }
+    dark = !dark;
+}
+
+$("#swap").click(() => {
+    toggleDarkMode();
+});
+
 var firebaseConfig = {
     apiKey: "AIzaSyDF8OlqfgEvzpHGffp9uqcD3teoKKrsVAs",
     authDomain: "quick-mass.firebaseapp.com",
